@@ -1,0 +1,9 @@
+#Node Modules
+/node_modules
+
+#Git
+/.git
+
+#Build and Distribution Files
+/build
+/dist
