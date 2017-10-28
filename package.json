@@ -2,12 +2,9 @@
   "name": "converse",
   "version": "0.0.1",
   "description": "Web app for facilitating discussion between users who disagree on a political topic.",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "npm start"
   },
   "repository": {
     "type": "git",
@@ -27,10 +24,7 @@
   },
   "homepage": "https://github.com/converseapp/converse#readme",
   "dependencies": {
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "react-scripts": "1.0.14",
-    "semantic-ui-react": "^0.75.1"
+
   },
   "devDependencies": {
     "mocha": "^4.0.1"
