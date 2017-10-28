@@ -1,9 +1,23 @@
-#Node Modules
+# Node Modules
 /node_modules
 
-#Git
+# Git
 /.git
 
-#Build and Distribution Files
+# Build and Distribution Files
 /build
 /dist
+
+# Testing
+/coverage
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
