@@ -1,13 +1,28 @@
+
+	
 /* sizes */
-#main-wrap > div { 
-    height: 100%
+#main-wrap > div {
+    min-height: 500px;
 }
+
+html, body { height: 100% }
 
 
 #header,
 #footer {
     min-height: 40px;
 }
+
+
+
+#main-wrap > div { min-height: 500px; }
+
+
+#header,
+#footer {
+    min-height: 40px;
+}
+
 
 /* layout */
 #main-wrap {
@@ -22,14 +37,20 @@
 
 #content-wrap {
     float: right;
-    width: 70%;
+    width: 70%; 
+    padding-left: 0;
+    height: 100%
+
 }  
 
-html, body {
-        height: 100%;
-        margin: 0px;
-}
-.container {
-        height: 100%;
-        background: #f0e68c;
-}
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
