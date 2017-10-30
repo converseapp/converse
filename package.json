@@ -23,10 +23,9 @@
     "url": "https://github.com/converseapp/converse/issues"
   },
   "homepage": "https://github.com/converseapp/converse#readme",
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "devDependencies": {
+    "less": "^2.7.3",
     "mocha": "^4.0.1"
   }
 }
