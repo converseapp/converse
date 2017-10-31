@@ -4,7 +4,7 @@
   "description": "Web app for facilitating discussion between users who disagree on a political topic.",
   "main": "index.html",
   "scripts": {
-    "start": "npm start"
+    "start": "grunt"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,10 @@
   "homepage": "https://github.com/converseapp/converse#readme",
   "dependencies": {},
   "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-less": "^1.4.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "jit-grunt": "^0.10.0",
     "less": "^2.7.3",
     "mocha": "^4.0.1"
   }
