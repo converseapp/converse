@@ -2,9 +2,10 @@
   "name": "converse",
   "version": "0.0.1",
   "description": "Web app for facilitating discussion between users who disagree on a political topic.",
-  "main": "index.html",
+  "main": "main.js",
   "scripts": {
-    "start": "grunt"
+    "start": "electron .",
+    "compile": "grunt"
   },
   "repository": {
     "type": "git",
@@ -25,12 +26,11 @@
   "homepage": "https://github.com/converseapp/converse#readme",
   "dependencies": {},
   "devDependencies": {
+    "electron-prebuilt": "^1.4.13",
     "grunt": "^1.0.1",
-    "grunt-contrib-less": "^1.4.1",
+    "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
     "jit-grunt": "^0.10.0",
-    "kickstart-node": "^3.0.75",
-    "less": "^2.7.3",
     "mocha": "^4.0.1"
   }
 }

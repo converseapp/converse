@@ -1,29 +1,31 @@
 module.exports = function(grunt) {
-  require('jit-grunt')(grunt);
+    require('jit-grunt')(grunt);
 
-  grunt.initConfig({
-    less: {
-      development: {
-        options: {
-          compress: true,
-          yuicompress: true,
-          optimization: 2
+    grunt.initConfig({
+        sass: {                              // Task
+            dist: {                            // Target
+                options: {                       // Target options
+                    style: 'expanded'
+                },
+                files: [{
+                    expand: true,
+                    cwd: './',
+                    src: ['scss/*.scss'],
+                    dest: 'css',
+                    ext: '.css'
+                }]
+            }
         },
-        files: {
-          "css/style.css": "less/style.less" // destination file and source file
+        watch: {
+            styles: {
+                files: ['scss/**/*.scss'], // which files to watch
+                tasks: ['sass'],
+                options: {
+                    nospawn: true
+                }
+            }
         }
-      }
-    },
-    watch: {
-      styles: {
-        files: ['less/**/*.less'], // which files to watch
-        tasks: ['less'],
-        options: {
-          nospawn: true
-        }
-      }
-    }
-  });
+    });
 
-  grunt.registerTask('default', ['less', 'watch']);
+    grunt.registerTask('default', ['sass', 'watch']);
 };
