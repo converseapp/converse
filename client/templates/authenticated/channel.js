@@ -2,6 +2,14 @@ import handleChannelSwitch from '../../modules/handle-channel-switch';
 import sortMessages from '../../modules/sort-messages';
 import handleMessageInsert from '../../modules/handle-message-insert';
 
+const handleRedirect = ( routes, redirect ) => {
+  let currentRoute = FlowRouter.getRouteName();
+  if ( routes.indexOf( currentRoute ) > -1 ) {
+    FlowRouter.go( redirect );
+    return true;
+  }
+};
+
 Template.channel.onCreated( () => {
   let template = Template.instance();
   handleChannelSwitch( template );
@@ -22,6 +30,20 @@ Template.channel.helpers({
     if ( messages ) {
       return sortMessages( messages );
     }
+  },
+  authenticated() {
+    return !Meteor.loggingIn() && Meteor.user();
+  },
+  redirectAuthenticated() {
+    return handleRedirect([
+      'login',
+      'signup',
+      'recover-password',
+      'reset-password'
+    ], '/browse' );
+  },
+  redirectPublic() {
+    return handleRedirect( [ 'channel', 'browse' ], '/login' );
   }
 });
 
