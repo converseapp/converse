@@ -4,4 +4,4 @@
 
 Converse is an app designed to facilitate discussion between users of different political opinions. For UC Berkeley's CS 160, Fall 2017
 
-Check us out at [converse-160.herokuapp.com] (https://converse-160.herokuapp.com).
+Check us out at https://converse-160.herokuapp.com.
