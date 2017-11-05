@@ -31,6 +31,6 @@ Template.default.helpers({
     ], '/browse' );
   },
   redirectPublic() {
-    return handleRedirect( [ 'channel' ], '/login' );
+    return handleRedirect( [ 'channel', 'browse' ], '/login' );
   }
 });
