@@ -28,7 +28,7 @@ Template.default.helpers({
       'signup',
       'recover-password',
       'reset-password'
-    ], '/messages/general' );
+    ], '/browse' );
   },
   redirectPublic() {
     return handleRedirect( [ 'channel' ], '/login' );

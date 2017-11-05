@@ -3,6 +3,13 @@ const authenticatedRoutes = FlowRouter.group( { name: 'authenticated' } );
 authenticatedRoutes.route( '/messages/:channel', {
   name: 'channel',
   action() {
-    BlazeLayout.render( 'default', { yield: 'channel' } );
+    BlazeLayout.render( 'channel', { yield: 'channel' } );
+  }
+});
+
+authenticatedRoutes.route( '/browse', {
+  name: 'browse',
+  action() {
+    BlazeLayout.render( 'default', { yield: 'browse' } );
   }
 });
