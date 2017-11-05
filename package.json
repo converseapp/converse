@@ -4,8 +4,9 @@
   "description": "Web app for facilitating discussion between users who disagree on a political topic.",
   "main": "main.js",
   "scripts": {
-    "start": "electron .",
-    "compile": "grunt"
+      "start": "meteor --settings settings-development.json",
+      "staging": "meteor deploy staging.meteor.com --settings settings-development.json",
+      "production": "meteor deploy production.meteor.com --settings settings-production.json"
   },
   "repository": {
     "type": "git",
@@ -24,7 +25,9 @@
     "url": "https://github.com/converseapp/converse/issues"
   },
   "homepage": "https://github.com/converseapp/converse#readme",
-  "dependencies": {},
+  "dependencies": {
+      "lodash": "^4.5.1"
+  },
   "devDependencies": {
     "electron-prebuilt": "^1.4.13",
     "grunt": "^1.0.1",
