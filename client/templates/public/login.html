@@ -1,21 +1,60 @@
 <template name="login">
-  <div class="row">
-    <div class="col-xs-12 col-sm-6 col-md-4">
-      <h4 class="page-header">Login</h4>
-      <form id="login" class="login">
-        <div class="form-group">
-          <label for="emailAddress">Email Address</label>
-          <input type="email" name="emailAddress" class="form-control" placeholder="Email Address">
+    <div id="hgrad">
+        <div id="bounds">
+            <div id="welcome">WELCOME TO</div>
+            <img src="img/CONVERSE_Logo_White.png" alt="Converse"/>
         </div>
-        <div class="form-group">
-          <label for="password"><span class="pull-left">Password</span> <a class="pull-right" href="{{pathFor 'recover-password'}}">Forgot Password?</a></label>
-          <input type="password" name="password" class="form-control" placeholder="Password">
-        </div>
-        <div class="form-group">
-          <input type="submit" class="btn btn-success" value="Login">
-        </div>
-      </form>
-      <p>Don't have an account? <a href="{{pathFor 'signup'}}">Sign Up</a>.</p>
     </div>
-  </div>
+
+    <h1>ABOUT CONVERSE</h1>
+    <!-- <div class="tutorial" style="display:inline;">
+    <button id="left" class="carousel-button">&#10094;</button>
+    <div class="carousel" style="display:inline;">
+    <div class="slides" style="display:block">
+    <div class="caption" style="">Browse the profiles of other users with different opinions. You can choose to send them an invite or simply try to match with them. Once both parties accept, discuss!</div>
+    <img class="slide-img" src="img/carousel_browse.png" alt="Browse the profiles of other users" style="width:100vh;"/>
+    </div>
+    <div class="slides" style="display:none">
+    <div class="caption">While discussing, view a sidebar of helpful information and recommended topics, to really get the discussion going!</div>
+    <img class="slide-img" src="img/carousel_chat.png" alt="Get information about relevant statistics and topics" style="width:100vh;"/>
+    </div>
+    <div class="slides" style="display:none">
+    <div class="caption">When you're done talking, or if you've been having a really great conversation, rate it! Are they a great conversationalist? Let them know! Build reputation by having good conversation. The better your reputation, the more people will want to converse!</div>
+    <img class="slide-img" src="img/carousel_feedback.png" alt="Give feedback about your conversation" style="width:100vh;"/>
+    </div>
+    <div class="slides" style="display:none">
+    <div class="caption">Let's get Conversing!</div>
+    <img class="slide-img" src="img/CONVERSE Logo Black (Large).png" alt="CONVERSE Logo" style="width:100vh;"/>
+    </div>
+    <button id="right" class="carousel-button">&#10095;</button>
+    </div>
+    </div> -->
+
+<div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <!-- <h4 class="page-header">Login</h4> -->
+        <form id="login" class="login">
+            <div class="form-group">
+                <label for="emailAddress">Email Address</label>
+                <input type="email" name="emailAddress" class="form-control" placeholder="Email Address">
+            </div>
+            <div class="form-group">
+                <label for="password"><span class="pull-left">Password</span> <a class="pull-right" href="{{pathFor 'recover-password'}}">Forgot Password?</a></label>
+                <input type="password" name="password" class="form-control" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-success" value="Login">
+            </div>
+        </form>
+        <p>Don't have an account? <a href="{{pathFor 'signup'}}">Sign Up</a>.</p>
+    </div>
+</div>
+<div>
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+</div>
+<p>Copyright (c) 2017 Ananth Agarwal, Bryan Alcorn, Monica Kumaran, Natalie Leuenberger, Jenny Li</p>
+<div>&nbsp;</div>
 </template>
