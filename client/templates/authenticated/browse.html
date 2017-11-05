@@ -1,0 +1,13 @@
+<template name="browse">
+	<!-- {{> sidebar}} -->
+  <h1>Browse</h1>
+	<ul>
+	  {{#each user in users}}
+	    <li class="{{user.username}}">
+	      <a href="/messages/@{{user.username}}">
+	        {{fullName user.profile.name}}
+	      </a>
+	    </li>
+	  {{/each}}
+	</ul>
+</template>
