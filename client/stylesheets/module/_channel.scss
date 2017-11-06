@@ -94,10 +94,10 @@ body.is-channel .container {
     color: aliceblue;
     font-family: 'Lato', serif;
     background: $purple;
-    background: -webkit-linear-gradient($grad1, $grad2, $purple, $grad4, $grad5); /* For Safari */
-    background: -o-linear-gradient($grad1, $grad2, $purple, $grad4, $grad5); /* For Opera */
-    background: -moz-linear-gradient($grad1, $grad2, $purple, $grad4, $grad5); /* For Firefox */
-    background: linear-gradient($grad1, $grad2, $purple, $grad4, $grad5);
+//    background: -webkit-linear-gradient($grad1, $grad2, $purple, $grad4, $grad5); /* For Safari */
+//    background: -o-linear-gradient($grad1, $grad2, $purple, $grad4, $grad5); /* For Opera */
+//    background: -moz-linear-gradient($grad1, $grad2, $purple, $grad4, $grad5); /* For Firefox */
+//    background: linear-gradient($grad1, $grad2, $purple, $grad4, $grad5);
     clear: both;
 }
 
@@ -105,12 +105,12 @@ body.is-channel .container {
 #assistGrad {
     color: aliceblue;
     font-family: 'Lato', serif;
-    background: #778899;
+    background: $purple;
 //    background: -webkit-linear-gradient($grad1, $grad2, $purple, $grad4, $grad5); /* For Safari */
 //    background: -o-linear-gradient($grad1, $grad2, $purple, $grad4, $grad5); /* For Opera */
 //    background: -moz-linear-gradient($grad1, $grad2, $purple, $grad4, $grad5); /* For Firefox */
 //    background: linear-gradient($grad1, $grad2, $purple, $grad4, $grad5);
-//    clear: both;
+    clear: both;
 }
 
 
