@@ -1,0 +1,60 @@
+// Gradient colors
+$purple: #9B41FB;
+$grad1: #BE35FB;
+$grad2: #BB37FB;
+$grad4: #704FFB;
+$grad5: #704FFB;
+
+.bienvenue {
+    display: block;
+}
+
+#hgrad {
+    font-family: 'Lato', serif;
+    background: $purple;
+    background: -webkit-linear-gradient($grad1, $grad2, $purple, $grad4, $grad5); /* For Safari */
+    background: -o-linear-gradient($grad1, $grad2, $purple, $grad4, $grad5); /* For Opera */
+    background: -moz-linear-gradient($grad1, $grad2, $purple, $grad4, $grad5); /* For Firefox */
+    background: linear-gradient($grad1, $grad2, $purple, $grad4, $grad5);
+    clear: both;
+}
+
+#bounds {
+    // height: 100vh;
+    padding-top: 25px;
+
+    color: white;
+    font-size: 50px;
+
+    display: block;
+    // align-items: center;
+    // justify-content: center;
+    text-align: center;
+}
+
+#buttons {
+    font-size: 35px;
+    display: block;
+    align-items: center;
+    padding-bottom: 25px;
+    color: white;
+}
+
+.advance {
+    background: $grad1;
+    border: none;
+    box-shadow: 2px 8px 15px rgba(#fff, 0.1);
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    &:hover {
+        color: white;
+    }
+}
+
+.carousel {
+    text-align: center;
+}
