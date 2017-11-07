@@ -73,7 +73,6 @@ let _seedUsers = () => {
       profile: {
         name: { first: 'John', last: 'DeNero' },
         location: 'Illinois, USA',
-        roles: [ 'admin' ],
         bio: 'Professor in the EECS department at UC Berkeley.',
         beliefs: [
           'Tax Reform',
@@ -106,7 +105,6 @@ let _seedUsers = () => {
       profile: {
         name: { first: 'Carol', last: 'Christ' },
         location: 'California, USA',
-        roles: [ 'admin' ],
         bio: 'Chancellor of the number one public university - UC Berkeley!',
         beliefs: [
           'DACA',
@@ -136,7 +134,6 @@ let _seedUsers = () => {
       profile: {
         name: { first: 'Tom', last: 'Cruise' },
         location: 'Mission Impossible, USA',
-        roles: [ 'admin' ],
         bio: 'Just a regular guy who loves adventure',
         beliefs: [
           'Strong military',

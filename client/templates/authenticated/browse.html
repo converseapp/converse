@@ -8,7 +8,23 @@
 	        {{fullName user.profile.name}}
 	      </a>
 	      <ul>
-	      	<li>{{location user.profile.location}}</li>
+	      	<li>Location: {{displayInfo user.profile.location}}</li>
+	      	<li>Bio: {{displayInfo user.profile.bio}}</li>
+	      	<li>Beliefs: {{displayListInfo user.profile.beliefs}}</li>
+	      	<li>
+	      		Media:
+		      	{{#each item in getList user.profile.links}}
+			      	<a href="{{item}}">link </a>
+			    {{/each}}
+			 </li>
+	      	<li>
+	      		Recently Read:
+		      	{{#each item in getList user.profile.recent}}
+			      	<a href="{{item}}">link </a>
+			    {{/each}}
+			 </li>
+	      	<li>Badges: {{displayListInfo user.profile.badges}}</li>
+	      	<li>Testimonials: {{displayListInfo user.profile.testimonials}}</li>
 	      </ul>
 	    </li>
 	  {{/each}}

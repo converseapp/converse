@@ -22,11 +22,23 @@ Template.browse.helpers({
       return `${ name.first } ${ name.last }`;
     }
   },
-  location( loc ) {
-    if ( loc ) {
-      return `${ loc }`;
+  displayInfo( info ) {
+    if ( info ) {
+      return `${ info }`;
     } else {
       return 'N/A';
+    }
+  },
+  displayListInfo( info ) {
+    if ( info ) {
+      return info.join(', ');
+    } else {
+      return 'N/A';
+    }
+  },
+  getList( list ) {
+    if ( list ) {
+      return list;
     }
   }
 });
