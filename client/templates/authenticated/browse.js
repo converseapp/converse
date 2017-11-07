@@ -21,5 +21,12 @@ Template.browse.helpers({
     if ( name ) {
       return `${ name.first } ${ name.last }`;
     }
+  },
+  location( loc ) {
+    if ( loc ) {
+      return `${ loc }`;
+    } else {
+      return 'N/A';
+    }
   }
 });
