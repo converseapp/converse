@@ -1,0 +1,56 @@
+
+	
+/* sizes */
+#main-wrap > div {
+    min-height: 500px;
+}
+
+html, body { height: 100% }
+
+
+#header,
+#footer {
+    min-height: 40px;
+}
+
+
+
+#main-wrap > div { min-height: 500px; }
+
+
+#header,
+#footer {
+    min-height: 40px;
+}
+
+
+/* layout */
+#main-wrap {
+    /* overflow to handle inner floating block */
+    overflow: hidden;
+}
+
+#sidebar {
+    float: left;
+    width: 30%;
+}
+
+#content-wrap {
+    float: right;
+    width: 70%; 
+    padding-left: 0;
+    height: 100%
+
+}  
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	

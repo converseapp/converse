@@ -1,9 +1,7 @@
 <template name="channel">
   {{>header}}
   {{> sidebar}}
-  {{> assistant}}
 
-  {{#if authenticated}}
   <div class="conversation">
     <div id="messages">
       <div class="messages-list {{#if isLoading}}loading-list{{/if}}">
@@ -23,9 +21,4 @@
       <input name="message" placeholder="Type your message here...">
     </div>
   </div>
-  {{else}}
-    {{#unless redirectPublic}}
-      {{> Template.dynamic template=yield}}
-    {{/unless}}
-  {{/if}}
 </template>
