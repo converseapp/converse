@@ -1,57 +1,6 @@
-<template name="assistant">    
-<aside class="assistant" id="assistGrad">
-    
-    
-    
-<div id="accordion" role="tablist" aria-multiselectable="true">
-  <div class="card">
-    <div class="card-header" role="tab" id="headingOne">
-      <h5 class="mb-0">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Collapsible Group Item #1
-        </a>
-      </h5>
-    </div>
+<template name="assistant">  
 
-    <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
-      <div class="card-block">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab" id="headingTwo">
-      <h5 class="mb-0">
-        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Collapsible Group Item #2
-        </a>
-      </h5>
-    </div>
-    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
-      <div class="card-block">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab" id="headingThree">
-      <h5 class="mb-0">
-        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Collapsible Group Item #3
-        </a>
-      </h5>
-    </div>
-    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
-      <div class="card-block">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-</div>    
-    
-    
-    
-    
+<aside class="assistant" id="assistGrad">
 
 <h3>Conversation Assistant</h3>
 
@@ -60,30 +9,77 @@
 <h5> 
     Here is some help to get you started. Based on your profile, we suggest starting the conversation sharing your views on gun contorl.
 </h5>
+    
+    
+<div id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="card">
+    <div class="card-header" role="tab" id="headingOne">
+      <h5 class="mb-0">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Articles
+        </a>
+      </h5>
+    </div>
 
+    <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+      <div class="card-block">
+            <ul>
+                <li><a href="https://www.vice.com/en_us/article/gy5ex9/the-leftist-argument-against-gun-control">A left perspective</a></li>
+                <li><a href="https://eaglerising.com/48360/we-can-not-coexist-with-people-who-want-to-kill-us/">Guns used to defent against terrorist</a></li>
+                <li><a href="http://www.dw.com/en/8-facts-about-gun-control-in-the-us/a-40816418">Gun Control FAQ</a></li>
+                <li><a href="https://www.allsides.com/allsides-search-results?search_api_views_fulltext=gun%20control&created=3&submit_x=0&submit_y=0">Allsides.com articles from both sides</a></li>
 
-    <h3> Articles </h3>
-    <ul>
-        <li><a href="https://www.vice.com/en_us/article/gy5ex9/the-leftist-argument-against-gun-control">A left perspective</a></li>
-        <li><a href="https://eaglerising.com/48360/we-can-not-coexist-with-people-who-want-to-kill-us/">Guns used to defent against terrorist</a></li>
-        <li><a href="http://www.dw.com/en/8-facts-about-gun-control-in-the-us/a-40816418">Gun Control FAQ</a></li>
-        <li><a href="https://www.allsides.com/allsides-search-results?search_api_views_fulltext=gun%20control&created=3&submit_x=0&submit_y=0">Allsides.com articles from both sides</a></li>
-
-    </ul>
-
-
-    <h3> Facts </h3>
-    <ul>
-        <!-- from http://www.justfacts.com/guncontrol.asp -->
-        <li>Handguns comprised 52% of all new guns sold to U.S. civilians and law enforcement in 2014</li>
-        <li>U.S. civilians use guns to defend themselves and others from crime at least 989,883 times per year</li>
-        <li>Americans use guns to frighten away intruders who are breaking into their homes about 498,000 times per year</li>
-        <li>Roughly 14,249 murders were committed in the United States during 2014. Of these, about 9,675 or 68% were committed with firearms</li>
-    </ul>  
-
-
-<div>
-    <h3> Watch </h3>
+            </ul>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab" id="headingTwo">
+      <h5 class="mb-0">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Facts
+        </a>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="card-block">
+         <ul>
+            <!-- from http://www.justfacts.com/guncontrol.asp -->
+            <li>Handguns comprised 52% of all new guns sold to U.S. civilians and law enforcement in 2014</li>
+            <li>U.S. civilians use guns to defend themselves and others from crime at least 989,883 times per year</li>
+            <li>Americans use guns to frighten away intruders who are breaking into their homes about 498,000 times per year</li>
+            <li>Roughly 14,249 murders were committed in the United States during 2014. Of these, about 9,675 or 68% were committed with firearms</li>
+        </ul>  
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab" id="headingThree">
+      <h5 class="mb-0">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Recommended Questions
+        </a>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="card-block">
+         <ul>
+            <li>Q1</li>
+        </ul>  
+      </div>
+    </div>
+  </div>
+    <div class="card">
+    <div class="card-header" role="tab" id="headingFour">
+      <h5 class="mb-0">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Watch
+        </a>
+      </h5>
+    </div>
+    <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
+      <div class="card-block">
+         <div>
     <div class="videos">
         <div class="vids">
             <iframe width="175" height="175" src="https://www.youtube.com/embed/kRAw3VWVyD8" frameborder="0" allowfullscreen></iframe>
@@ -94,7 +90,18 @@
 
     </div>
 
-</div>
+</div> 
+      </div>
+    </div>
+    </div>
+</div>    
+
+
+    
+    
+    
+
+
 
 </aside>
 
