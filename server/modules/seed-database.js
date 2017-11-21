@@ -9,7 +9,9 @@ let _seedUsers = () => {
       password: 'password',
       profile: {
         name: { first: 'Mark', last: 'Zuckerburg' },
+        age: '35',
         location: 'California, USA',
+        occupation: 'CEO',
         bio: 'Co-founder and CEO of Facebook. Working to bring the world closer together.',
         beliefs: [
           'LGBTQ Rights',
@@ -26,7 +28,9 @@ let _seedUsers = () => {
       password: 'password',
       profile: {
         name: { first: 'Barack', last: 'Obama' },
+        age: '48',
         location: 'Illinois, USA',
+        occupation: 'President',
         bio: '44th President of the United States.',
         beliefs: [
           'Affordable Health Care',
@@ -42,7 +46,9 @@ let _seedUsers = () => {
       password: 'password',
       profile: {
         name: { first: 'John', last: 'DeNero' },
+        age: '33',
         location: 'Illinois, USA',
+        occupation: 'Lecturer',
         bio: 'Professor in the EECS department at UC Berkeley.',
         beliefs: [
           'Tax Reform',
@@ -59,7 +65,9 @@ let _seedUsers = () => {
       password: 'password',
       profile: {
         name: { first: 'Carol', last: 'Christ' },
+        age: '55',
         location: 'California, USA',
+        occupation: 'Chancellor',
         bio: 'Chancellor of the number one public university - UC Berkeley!',
         beliefs: [
           'DACA',
@@ -75,7 +83,9 @@ let _seedUsers = () => {
       password: 'password',
       profile: {
         name: { first: 'Tom', last: 'Cruise' },
+        age: '42',
         location: 'Mission Impossible, USA',
+        occupation: 'Special Agent',
         bio: 'Just a regular guy who loves adventure',
         beliefs: [
           'Strong military',
