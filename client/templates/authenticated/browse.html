@@ -21,25 +21,12 @@
 	        	{{fullName user.profile.name}}
 	      	</h4>
 	      </div>
-	      <ul class="list-group list-group-flush">
-	      	<li class="list-group-item">Media:
-				      	{{#each item in getList user.profile.links}}
-					      	<a href="{{item}}">link </a>
-					    {{/each}}</li>
-			<li class="list-group-item">
-			      		Recently Read:
-				      	{{#each item in getList user.profile.recent}}
-					      	<a href="{{item}}">link </a>
-					    {{/each}}
-			</li>
 	    
 	    	<li class="list-group-item">Age: {{displayInfo user.profile.age}}</li>
     		<li class="list-group-item">Location: {{displayInfo user.profile.location}}</li>
     		<li class="list-group-item">Occupation: {{displayInfo user.profile.occupation}}</li>
     		<li class="list-group-item">Bio: {{displayInfo user.profile.bio}}</li>
     		<li class="list-group-item">Beliefs: {{displayListInfo user.profile.beliefs}}</li>
-    		<li class="list-group-item">Badges: {{displayListInfo user.profile.badges}}</li>
-    		<li class="list-group-item">Testimonials: {{displayListInfo user.profile.testimonials}}</li>
   		  </ul>
   		  <div class="card-block">
     		<!--<a href="#" class="card-link">Skip</a>-->
