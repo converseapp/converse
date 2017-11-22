@@ -13,12 +13,28 @@ let _seedUsers = () => {
         location: 'California, USA',
         occupation: 'CEO',
         bio: 'Co-founder and CEO of Facebook. Working to bring the world closer together.',
-        beliefs: [
-          'LGBTQ Rights',
-          'Pro-life',
-          'DACA',
-          'Scientology'
-        ]
+        beliefs: {
+          belief1: {
+            value: 5,
+            response: "test"
+          },
+          belief2: {
+            value: 5,
+            response: "test"
+          },
+          belief3: {
+            value: 5,
+            response: "test"
+          },
+          belief4: {
+            value: 5,
+            response: "test"
+          },
+          belief5: {
+            value: 5,
+            response: "test"
+          }
+        }
       },
       roles: [ 'admin' ]
      },

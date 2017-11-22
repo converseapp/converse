@@ -1,5 +1,5 @@
 <template name="signup">
-  <h4 class="page-header">Sign Up</h4>
+  <h1 class="page-header">Sign Up</h1>
   <form id="signup" class="signup">
     <div class="row">
       <div class="col-xs-12 col-sm-6 col-md-4">
@@ -71,11 +71,73 @@
     </div>
 
     <div class="row">
-      <div class="form-group">
-        <label for="bio">Bio</label>
-        <textarea class="form-control" name="bio" cols="40" rows="5"
-        placeholder="Tell others a little about yourself."></textarea>
+      <div class="col-xs-6"> 
+        <h3>Beliefs & Positions</h3> 
+        <span>To help provide you with better matches, tell us about your stances on these topics.</span> 
+        <hr>      
+        <div class="form-group">
+          <label for="belief-1-value">ABORTION</label>
+          <div>
+            <div style="float: left">Pro-Choice</div>
+            <div style="float: right">Pro-Life</div>
+          </div>
+          <input name = "belief-1-value" type="range" min="0" max="10" step="1">
+        </div>
+        <div class="form-group">
+          <label for="belief-1-response">Under what circumstances do you feel that abortion would be acceptable or not, and why?</label>
+          <textarea class="form-control" name="belief-1-response" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="belief-2-value">HEALTH CARE</label>
+          <div>
+            <div style="float: left">Required</div>
+            <div style="float: right">Free Market</div>
+          </div>
+          <input name = "belief-2-value" type="range" min="0" max="10" step="1">
+        </div>
+        <div class="form-group">
+          <label for="belief-2-response">Why do you prefer that system of healthcare, and what do you think are its advantages?</label>
+          <textarea class="form-control" name="belief-2-response" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="belief-3-value">GUN CONTROL</label>
+          <div>
+            <div style="float: left">Less Strict</div>
+            <div style="float: right">More Strict</div>
+          </div>
+          <input name = "belief-3-value" type="range" min="0" max="10" step="1">
+        </div>
+        <div class="form-group">
+          <label for="belief-3-response">What controls, if any, do you think should be implemented?</label>
+          <textarea class="form-control" name="belief-3-response" rows="3"></textarea>
+        </div>
+         <div class="form-group">
+          <label for="belief-4-value">FREEDOM OF SPEECH</label>
+          <div>
+            <div style="float: left">Less Strict</div>
+            <div style="float: right">More Strict</div>
+          </div>
+          <input name = "belief-4-value" type="range" min="0" max="10" step="1">
+        </div>
+        <div class="form-group">
+          <label for="belief-4-response">Explain your position; do you think there are certain types of speech that should be restricted, and if so, what is the line between allowable and not?</label>
+          <textarea class="form-control" name="belief-4-response" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="belief-5-value">IMMIGRATION</label>
+          <div>
+            <div style="float: left">Less Strict</div>
+            <div style="float: right">More Strict</div>
+          </div>
+          <input name = "belief-5-value" type="range" min="0" max="10" step="1">
+        </div>
+        <div class="form-group">
+          <label for="belief-5-response">Describe the type of immigration policies you think would be beneficial and why.</label>
+          <textarea class="form-control" name="belief-5-response" rows="3"></textarea>
+        </div>      
+
       </div>
+  
     </div>
 
     <div class="row">
