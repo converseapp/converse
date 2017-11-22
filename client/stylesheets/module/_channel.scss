@@ -142,19 +142,24 @@ body.is-channel .container {
   }
 
   li {
-    font-size: 12px;
+    font-size: 15px;
   } 
+
+//    img {
+//        float: left;
+//    }
 
   a {
     font: 14px;
-    display: block;
+    //display: block;
     color: lighten( $blue, 40% );
     text-decoration: none;
     border-left: none;
   }
 
   a:hover {
-    background: darken( $blue, 10% );
+    //background: darken( $blue, 10% );
+    color: darken( $blue, 10% );
   }
 }
 
