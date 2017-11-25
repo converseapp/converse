@@ -4,15 +4,16 @@ let _seedUsers = () => {
   Seed( 'users', {
     environments: [ 'development', 'staging', 'production' ],
     data: [{
-      username: 'facebookfounder',
-      email: 'admin@admin.com',
+      username: 'businessman',
+      email: 'mark@admin.com',
       password: 'password',
       profile: {
-        name: { first: 'Mark', last: 'Zuckerburg' },
+        name: { first: 'Mark', last: 'Chen' },
         age: '35',
         location: 'California, USA',
-        occupation: 'CEO',
-        bio: 'Co-founder and CEO of Facebook. Working to bring the world closer together.'
+        occupation: 'Product Manager',
+        bio: 'San Jose State graduate currently working as a product manager at Lyft. Born and raised on the East Coast, moved to California for college.',
+
       },
       beliefs: [
         {
@@ -44,20 +45,15 @@ let _seedUsers = () => {
       roles: [ 'admin' ]
      },
     {
-      username: 'president',
-      email: 'obama@admin.com',
+      username: 'econlover',
+      email: 'jane@admin.com',
       password: 'password',
       profile: {
-        name: { first: 'Barack', last: 'Obama' },
-        age: '48',
+        name: { first: 'Jane', last: 'Johnson' },
+        age: '20',
         location: 'Illinois, USA',
-        occupation: 'President',
-        bio: '44th President of the United States.',
-        beliefs: [
-          'Affordable Health Care',
-          'Climate Change',
-          'DACA'
-        ]
+        occupation: 'Student',
+        bio: 'Economics student at the University of Chicago. Raised by a conservative family in Atlanta, Georgia.',
       },
       beliefs: [
         {
@@ -89,20 +85,15 @@ let _seedUsers = () => {
       roles: [ 'admin' ]
     },
     {
-      username: 'cs',
-      email: 'john@admin.com',
+      username: 'builder',
+      email: 'stanley@admin.com',
       password: 'password',
       profile: {
-        name: { first: 'John', last: 'DeNero' },
-        age: '33',
-        location: 'Illinois, USA',
-        occupation: 'Lecturer',
-        bio: 'Professor in the EECS department at UC Berkeley.',
-        beliefs: [
-          'Tax Reform',
-          'Immigration Reform',
-          'Trees'
-        ]
+        name: { first: 'Stanley', last: 'Wandell' },
+        age: '28',
+        location: 'New York, USA',
+        occupation: 'Construction Worker and Student',
+        bio: 'Construction worker in New York City. I also take online courses at a local community college.',
       },
       beliefs: [
         {
@@ -135,20 +126,15 @@ let _seedUsers = () => {
       
     },
     {
-      username: 'chancellor',
-      email: 'carol@admin.com',
+      username: 'maria',
+      email: 'maria@admin.com',
       password: 'password',
       profile: {
-        name: { first: 'Carol', last: 'Christ' },
-        age: '55',
-        location: 'California, USA',
-        occupation: 'Chancellor',
-        bio: 'Chancellor of the number one public university - UC Berkeley!',
-        beliefs: [
-          'DACA',
-          'Job growth',
-          'Pro-choice'
-        ]
+        name: { first: 'Maria', last: 'Gonzalez' },
+        age: '70',
+        location: 'Colorado, USA',
+        occupation: 'Retired',
+        bio: 'Recently retired after a long successful career practicing law. Spent the first half of my career in Seattle, the latter half in Denver.',
       },
       beliefs: [
         {
@@ -184,16 +170,11 @@ let _seedUsers = () => {
       email: 'tom@admin.com',
       password: 'password',
       profile: {
-        name: { first: 'Tom', last: 'Cruise' },
+        name: { first: 'Tom', last: 'Flynn' },
         age: '42',
-        location: 'Mission Impossible, USA',
-        occupation: 'Special Agent',
-        bio: 'Just a regular guy who loves adventure',
-        beliefs: [
-          'Strong military',
-          'Veteran care',
-          'Affordable Health Care'
-        ]
+        location: 'California, USA',
+        occupation: 'Special Effects',
+        bio: 'Just a regular guy who loves adventure. I have worked on special effects for several high-profile movies including Mission Impossible.',
       },
       beliefs: [
         {
