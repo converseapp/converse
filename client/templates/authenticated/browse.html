@@ -1,13 +1,38 @@
 <template name="browse">
-	<!-- {{> sidebar}} -->
+	<!-- {{> sidebar}}  https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css>
+	https://cdn.jsdelivr.net/npm/semantic-ui@2.2.13/dist/components/card.css
+	https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css
+
+	-->
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+
   <h1>Browse</h1>
-	<ul>
+
+  	<div class="card-columns">
+
 	  {{#each user in users}}
-	    <li class="{{user.username}}">
-	      <a href="/messages/@{{user.username}}">
-	        {{fullName user.profile.name}}
-	      </a>
-	    </li>
-	  {{/each}}
-	</ul>
+	    <div class="{{user.username}} card">
+	      <!--<img class="card-img-top" src="..." alt="Card image cap">	style="width: 20rem;"-->
+	      <div class="card-block">	
+	      	<h4 class="card-header">
+	        	{{fullName user.profile.name}}
+	      	</h4>
+	      </div>
+	      <ul class="list-group list-group-flush">	    
+	    	<li class="list-group-item">Age: {{displayInfo user.profile.age}}</li>
+    		<li class="list-group-item">Location: {{displayInfo user.profile.location}}</li>
+    		<li class="list-group-item">Occupation: {{displayInfo user.profile.occupation}}</li>
+    		<li class="list-group-item">Bio: {{displayInfo user.profile.bio}}</li>
+    		<li class="list-group-item">Beliefs: {{displayListInfo user.profile.beliefs}}</li>
+  		  </ul>
+  		  <div class="card-block">
+    		<!--<a href="#" class="card-link">Skip</a>-->
+    		<a href="/messages/@{{user.username}}" class="btn btn-success">Message</a>
+  		  </div>
+		</div>
+	{{/each}}
+	</div>
 </template>

@@ -1,19 +1,24 @@
-Template.browse.onCreated( () => {
+Template.sidebar.onCreated( () => {
   let template = Template.instance();
-  template.subscribe( 'browse' );
+  template.subscribe( 'assistant' );
 });
 
-Template.browse.helpers({
+Template.sidebar.helpers({
   currentChannel( name ) {
     let current = FlowRouter.getParam( 'channel' );
     if ( current ) {
       return current === name || current === `@${ name }` ? 'active' : false;
     }
   },
+  channels() {
+    let channels = Channels.find();
+    if ( channels ) {
+      return channels;
+    }
+  },
   users() {
     let users = Meteor.users.find( { _id: { $ne: Meteor.userId() } } );
     if ( users ) {
-      console.log(users);
       return users;
     }
   },
@@ -21,24 +26,14 @@ Template.browse.helpers({
     if ( name ) {
       return `${ name.first } ${ name.last }`;
     }
-  },
-  displayInfo( info ) {
-    if ( info ) {
-      return `${ info }`;
-    } else {
-      return 'N/A';
-    }
-  },
-  displayListInfo( info ) {
-    if ( info ) {
-      return info.join(', ');
-    } else {
-      return 'N/A';
-    }
-  },
-  getList( list ) {
-    if ( list ) {
-      return list;
-    }
   }
 });
+
+
+
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}

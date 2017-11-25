@@ -1,6 +1,11 @@
 $red: #DA5347;
 $blue: #1B9EDB;
 $green: #75BA50;
+$purple: lighten(#9B41FB,9%);
+$grad1: lighten(#BE35FB, 9%);
+$grad2: lighten(#BB37FB, 9%);
+$grad4: lighten(#704FFB, 9%);
+$grad5: lighten(#704FFB, 9%);
 
 body.is-channel .container {
   width: 100%;
@@ -17,7 +22,7 @@ body.is-channel .container {
 .sidebar {
   left: 0;
   width: 250px;
-  background: $blue;
+  //background: $blue; 
   padding: 20px;
 
   h5 {
@@ -80,6 +85,90 @@ body.is-channel .container {
     border-radius: 30px;
   }
 }
+
+
+/* The assistant! Is here! Only modify this */
+
+
+#sideGrad {
+    color: aliceblue;
+    font-family: 'Lato', serif;
+    background: $purple;
+    
+//    background: -webkit-linear-gradient($grad1, $grad2, $purple, $grad4, $grad5); /* For Safari */
+//    background: -o-linear-gradient($grad1, $grad2, $purple, $grad4, $grad5); /* For Opera */
+//    background: -moz-linear-gradient($grad1, $grad2, $purple, $grad4, $grad5); /* For Firefox */
+//    background: linear-gradient($grad1, $grad2, $purple, $grad4, $grad5);
+    clear: both;
+}
+
+
+#assistGrad {
+    color: aliceblue;
+    font-family: 'Lato', serif;
+    background: $purple;
+//    background: -webkit-linear-gradient($grad1, $grad2, $purple, $grad4, $grad5); /* For Safari */
+//    background: -o-linear-gradient($grad1, $grad2, $purple, $grad4, $grad5); /* For Opera */
+//    background: -moz-linear-gradient($grad1, $grad2, $purple, $grad4, $grad5); /* For Firefox */
+//    background: linear-gradient($grad1, $grad2, $purple, $grad4, $grad5);
+    clear: both;
+}
+
+
+.vids {
+    float: left;
+    width: 50%;
+}
+
+.videos:after {
+   content: "";
+    display: table;
+    clear: both; 
+}
+
+.assistant,
+.conversation {
+  padding-top: 5px;
+  padding-left: 20px;
+  top: 52px;
+  bottom: 0;
+  height: 100%;
+  right: 0px;
+}
+
+.assistant {
+  .column h3 {
+    margin-left: 20px;  
+  }
+
+  li {
+    font-size: 15px;
+  } 
+
+//    img {
+//        float: left;
+//    }
+
+  a {
+    font: 14px;
+    //display: block;
+    color: lighten( $blue, 40% );
+    text-decoration: none;
+    border-left: none;
+  }
+
+  a:hover {
+    //background: darken( $blue, 10% );
+    color: darken( $blue, 10% );
+  }
+}
+
+
+
+
+/* End Assistant, stop! */
+
+
 
 .conversation {
   left: 250px;
