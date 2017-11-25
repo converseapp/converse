@@ -2,6 +2,6 @@ Meteor.publish( 'browse', function() {
   return [
     Channels.find(),
     Meteor.users.find( { _id: { $ne: this.userId } },
-    	{ fields: { username: 1, 'profile': 1 } } )
+    	{ fields: { username: 1, 'profile': 1, 'beliefs': 1 } } )
   ];
 });

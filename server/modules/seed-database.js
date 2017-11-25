@@ -12,30 +12,35 @@ let _seedUsers = () => {
         age: '35',
         location: 'California, USA',
         occupation: 'CEO',
-        bio: 'Co-founder and CEO of Facebook. Working to bring the world closer together.',
-        beliefs: {
-          belief1: {
-            value: 5,
-            response: "test"
-          },
-          belief2: {
-            value: 5,
-            response: "test"
-          },
-          belief3: {
-            value: 5,
-            response: "test"
-          },
-          belief4: {
-            value: 5,
-            response: "test"
-          },
-          belief5: {
-            value: 5,
-            response: "test"
-          }
-        }
+        bio: 'Co-founder and CEO of Facebook. Working to bring the world closer together.'
       },
+      beliefs: [
+        {
+          name: "Abortion",
+          value: 5,
+          response: "test"
+        },
+        {
+          name: "Health Care",
+          value: 5,
+          response: "test"
+        },
+        {
+          name: "Gun Control",
+          value: 5,
+          response: "test"
+        },
+        {
+          name: "Freedom of Speech",
+          value: 5,
+          response: "test"
+        },
+        {
+          name: "Immigration",
+          value: 5,
+          response: "test"
+        }
+      ],
       roles: [ 'admin' ]
      },
     {
@@ -54,6 +59,33 @@ let _seedUsers = () => {
           'DACA'
         ]
       },
+      beliefs: [
+        {
+          name: "Abortion",
+          value: 5,
+          response: "test"
+        },
+        {
+          name: "Health Care",
+          value: 5,
+          response: "test"
+        },
+        {
+          name: "Gun Control",
+          value: 5,
+          response: "test"
+        },
+        {
+          name: "Freedom of Speech",
+          value: 5,
+          response: "test"
+        },
+        {
+          name: "Immigration",
+          value: 5,
+          response: "test"
+        }
+      ],
       roles: [ 'admin' ]
     },
     {
@@ -72,6 +104,33 @@ let _seedUsers = () => {
           'Trees'
         ]
       },
+      beliefs: [
+        {
+          name: "Abortion",
+          value: 5,
+          response: "test"
+        },
+        {
+          name: "Health Care",
+          value: 5,
+          response: "test"
+        },
+        {
+          name: "Gun Control",
+          value: 5,
+          response: "test"
+        },
+        {
+          name: "Freedom of Speech",
+          value: 5,
+          response: "test"
+        },
+        {
+          name: "Immigration",
+          value: 5,
+          response: "test"
+        }
+      ],
       roles: [ 'admin' ],
       
     },
@@ -91,6 +150,33 @@ let _seedUsers = () => {
           'Pro-choice'
         ]
       },
+      beliefs: [
+        {
+          name: "Abortion",
+          value: 5,
+          response: "test"
+        },
+        {
+          name: "Health Care",
+          value: 5,
+          response: "test"
+        },
+        {
+          name: "Gun Control",
+          value: 5,
+          response: "test"
+        },
+        {
+          name: "Freedom of Speech",
+          value: 5,
+          response: "test"
+        },
+        {
+          name: "Immigration",
+          value: 5,
+          response: "test"
+        }
+      ],
       roles: [ 'admin' ]
     },
     {
@@ -109,6 +195,33 @@ let _seedUsers = () => {
           'Affordable Health Care'
         ]
       },
+      beliefs: [
+        {
+          name: "Abortion",
+          value: 5,
+          response: "test"
+        },
+        {
+          name: "Health Care",
+          value: 5,
+          response: "test"
+        },
+        {
+          name: "Gun Control",
+          value: 5,
+          response: "test"
+        },
+        {
+          name: "Freedom of Speech",
+          value: 5,
+          response: "test"
+        },
+        {
+          name: "Immigration",
+          value: 5,
+          response: "test"
+        }
+      ],
       roles: [ 'admin' ],
     }]
   });

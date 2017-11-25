@@ -40,5 +40,16 @@ Template.browse.helpers({
     if ( list ) {
       return list;
     }
+  },
+  getBeliefs( beliefs ) {
+    console.log(beliefs);
+    if ( beliefs ) {
+      console.log("test");
+      // beliefs.forEach(function(belief) {
+      //   console.log(belief);
+      //   // console.log(belief.value);
+      //   // console.log(belief.response);
+      // });
+    }
   }
 });
