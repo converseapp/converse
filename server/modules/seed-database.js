@@ -53,7 +53,7 @@ let _seedUsers = () => {
         age: '20',
         location: 'Illinois, USA',
         occupation: 'Student',
-        bio: 'Economics student at the University of Chicago. Raised by a conservative family in Atlanta, Georgia.',
+        bio: 'Economics student at the University of Chicago. Raised in a conservative family in Atlanta, Georgia.',
       },
       beliefs: [
         {
