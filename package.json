@@ -1,14 +1,38 @@
 {
-  "name": "application-name",
-  "version": "1.0.0",
-  "description": "Application description.",
+  "name": "converse",
+  "version": "0.0.1",
+  "description": "Web app for facilitating discussion between users who disagree on a political topic.",
+  "main": "main.js",
   "scripts": {
     "start": "meteor --settings settings-development.json",
     "staging": "meteor deploy staging.meteor.com --settings settings-development.json",
     "production": "meteor deploy production.meteor.com --settings settings-production.json"
   },
-  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/converseapp/converse.git"
+  },
+  "keywords": [
+    "converse",
+    "app",
+    "web",
+    "politics",
+    "discuss"
+  ],
+  "author": "Converse App",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/converseapp/converse/issues"
+  },
+  "homepage": "https://github.com/converseapp/converse#readme",
   "dependencies": {
     "lodash": "^4.5.1"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "jit-grunt": "^0.10.0",
+    "mocha": "^4.0.1"
   }
 }

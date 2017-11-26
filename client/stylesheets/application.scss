@@ -7,3 +7,16 @@
 @import "module/header";
 @import "module/loading";
 @import "module/login";
+@import "module/welcome";
+
+@font-face {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.div {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}

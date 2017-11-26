@@ -2,8 +2,15 @@ const publicRoutes = FlowRouter.group( { name: 'public' } );
 
 publicRoutes.route( '/', {
   action() {
-    FlowRouter.go( '/login' );
+    FlowRouter.go( '/welcome' );
   }
+});
+
+publicRoutes.route('/welcome', {
+    name:'welcome',
+    action() {
+        BlazeLayout.render( 'app', { yield: 'welcome' } );
+    }
 });
 
 publicRoutes.route( '/signup', {
