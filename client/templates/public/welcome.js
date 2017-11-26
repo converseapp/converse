@@ -1,7 +1,19 @@
-// Template.welcome.onRendered( () => {
-//   // login( { form: '#login', template: Template.instance() } );
-// });
+let template = Template.instance();
+let index, carousel;
+
+Template.welcome.onRendered( () => {
+    // index = 0;
+    // carousel = {
+    //     browse: template.find( '[name="c-browse"]'),
+    //     chat: template.find( '[name="c-chat"]'),
+    //     feedback: template.find( '[name="c-feedback"]')
+    // };
+});
+
+// Template.welcome.events({
 //
-// Template.login.events({
-//   'onclick': ( event ) => event.preventDefault()
 // });
+
+export default function( options ) {
+  template = options.template;
+}

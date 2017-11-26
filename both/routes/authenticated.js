@@ -10,6 +10,6 @@ authenticatedRoutes.route( '/messages/:channel', {
 authenticatedRoutes.route( '/browse', {
   name: 'browse',
   action() {
-    BlazeLayout.render( 'inapp', { yield: 'browse' } );
+    BlazeLayout.render( 'default', { yield: 'browse' } );
   }
 });

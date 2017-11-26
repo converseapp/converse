@@ -9,34 +9,34 @@ publicRoutes.route( '/', {
 publicRoutes.route('/welcome', {
     name:'welcome',
     action() {
-        BlazeLayout.render( 'default', { yield: 'welcome' } );
+        BlazeLayout.render( 'app', { yield: 'welcome' } );
     }
 });
 
 publicRoutes.route( '/signup', {
   name: 'signup',
   action() {
-    BlazeLayout.render( 'inapp', { yield: 'signup' } );
+    BlazeLayout.render( 'default', { yield: 'signup' } );
   }
 });
 
 publicRoutes.route( '/login', {
   name: 'login',
   action() {
-    BlazeLayout.render( 'inapp', { yield: 'login' } );
+    BlazeLayout.render( 'default', { yield: 'login' } );
   }
 });
 
 publicRoutes.route( '/recover-password', {
   name: 'recover-password',
   action() {
-    BlazeLayout.render( 'inapp', { yield: 'recoverPassword' } );
+    BlazeLayout.render( 'default', { yield: 'recoverPassword' } );
   }
 });
 
 publicRoutes.route( '/reset-password/:token', {
   name: 'reset-password',
   action() {
-    BlazeLayout.render( 'inapp', { yield: 'resetPassword' } );
+    BlazeLayout.render( 'default', { yield: 'resetPassword' } );
   }
 });
