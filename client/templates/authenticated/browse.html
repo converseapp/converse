@@ -8,14 +8,13 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
-
   <h1>Browse</h1>
 
   	<div class="card-columns">
 
 	  {{#each user in getMatches}}
 	    <div class="{{user.username}} card">
-	      <!--<img class="card-img-top" src="..." alt="Card image cap">	style="width: 20rem;"-->
+	      <img class="card-img-top" src="/avatars/{{user.profile.image}}" alt="Card image cap">
 	      <div class="card-block">	
 	      	<h4 class="card-header">
 	        	{{fullName user.profile.name}}

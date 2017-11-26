@@ -10,13 +10,6 @@ Template.browse.helpers({
       return current === name || current === `@${ name }` ? 'active' : false;
     }
   },
-  users() {
-    let users = Meteor.users.find( { _id: { $ne: Meteor.userId() } } );
-    if ( users ) {
-      console.log(users);
-      return users;
-    }
-  },
   fullName( name ) {
     if ( name ) {
       return `${ name.first } ${ name.last }`;
@@ -39,15 +32,6 @@ Template.browse.helpers({
   getList( list ) {
     if ( list ) {
       return list;
-    }
-  },
-  getBeliefs( beliefs ) {
-    if ( beliefs ) {
-      beliefs.forEach(function(belief) {
-        console.log(belief.name);
-        console.log(belief.value);
-        console.log(belief.response);
-      });
     }
   },
   getMatches() {    
