@@ -13,7 +13,7 @@
 
   	<div class="card-columns">
 
-	  {{#each user in users}}
+	  {{#each user in getMatches}}
 	    <div class="{{user.username}} card">
 	      <!--<img class="card-img-top" src="..." alt="Card image cap">	style="width: 20rem;"-->
 	      <div class="card-block">	
@@ -26,7 +26,6 @@
     		<li class="list-group-item">Location: {{displayInfo user.profile.location}}</li>
     		<li class="list-group-item">Occupation: {{displayInfo user.profile.occupation}}</li>
     		<li class="list-group-item">Bio: {{displayInfo user.profile.bio}}</li>
-    		<li class="list-group-item">Beliefs: {{getBeliefs user.beliefs}}</li>
   		  </ul>
   		  <div class="card-block">
     		<!--<a href="#" class="card-link">Skip</a>-->

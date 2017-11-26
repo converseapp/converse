@@ -13,35 +13,34 @@ let _seedUsers = () => {
         location: 'California, USA',
         occupation: 'Product Manager',
         bio: 'San Jose State graduate currently working as a product manager at Lyft. Born and raised on the East Coast, moved to California for college.',
-
+        beliefs: [
+          {
+            name: "Abortion",
+            value: 1,
+            response: "test"
+          },
+          {
+            name: "Health Care",
+            value: 8,
+            response: "test"
+          },
+          {
+            name: "Gun Control",
+            value: 10,
+            response: "test"
+          },
+          {
+            name: "Freedom of Speech",
+            value: 2,
+            response: "test"
+          },
+          {
+            name: "Immigration",
+            value: 6,
+            response: "test"
+          }
+        ]
       },
-      beliefs: [
-        {
-          name: "Abortion",
-          value: 5,
-          response: "test"
-        },
-        {
-          name: "Health Care",
-          value: 5,
-          response: "test"
-        },
-        {
-          name: "Gun Control",
-          value: 5,
-          response: "test"
-        },
-        {
-          name: "Freedom of Speech",
-          value: 5,
-          response: "test"
-        },
-        {
-          name: "Immigration",
-          value: 5,
-          response: "test"
-        }
-      ],
       roles: [ 'admin' ]
      },
     {
@@ -54,34 +53,34 @@ let _seedUsers = () => {
         location: 'Illinois, USA',
         occupation: 'Student',
         bio: 'Economics student at the University of Chicago. Raised in a conservative family in Atlanta, Georgia.',
+        beliefs: [
+          {
+            name: "Abortion",
+            value: 3,
+            response: "test"
+          },
+          {
+            name: "Health Care",
+            value: 9,
+            response: "test"
+          },
+          {
+            name: "Gun Control",
+            value: 1,
+            response: "test"
+          },
+          {
+            name: "Freedom of Speech",
+            value: 2,
+            response: "test"
+          },
+          {
+            name: "Immigration",
+            value: 3,
+            response: "test"
+          }
+        ]
       },
-      beliefs: [
-        {
-          name: "Abortion",
-          value: 5,
-          response: "test"
-        },
-        {
-          name: "Health Care",
-          value: 5,
-          response: "test"
-        },
-        {
-          name: "Gun Control",
-          value: 5,
-          response: "test"
-        },
-        {
-          name: "Freedom of Speech",
-          value: 5,
-          response: "test"
-        },
-        {
-          name: "Immigration",
-          value: 5,
-          response: "test"
-        }
-      ],
       roles: [ 'admin' ]
     },
     {
@@ -94,34 +93,34 @@ let _seedUsers = () => {
         location: 'New York, USA',
         occupation: 'Construction Worker and Student',
         bio: 'Construction worker in New York City. I also take online courses at a local community college.',
+        beliefs: [
+          {
+            name: "Abortion",
+            value: 1,
+            response: "test"
+          },
+          {
+            name: "Health Care",
+            value: 5,
+            response: "test"
+          },
+          {
+            name: "Gun Control",
+            value: 8,
+            response: "test"
+          },
+          {
+            name: "Freedom of Speech",
+            value: 1,
+            response: "test"
+          },
+          {
+            name: "Immigration",
+            value: 2,
+            response: "test"
+          }
+        ]
       },
-      beliefs: [
-        {
-          name: "Abortion",
-          value: 5,
-          response: "test"
-        },
-        {
-          name: "Health Care",
-          value: 5,
-          response: "test"
-        },
-        {
-          name: "Gun Control",
-          value: 5,
-          response: "test"
-        },
-        {
-          name: "Freedom of Speech",
-          value: 5,
-          response: "test"
-        },
-        {
-          name: "Immigration",
-          value: 5,
-          response: "test"
-        }
-      ],
       roles: [ 'admin' ],
       
     },
@@ -135,34 +134,34 @@ let _seedUsers = () => {
         location: 'Colorado, USA',
         occupation: 'Retired',
         bio: 'Recently retired after a long successful career practicing law. Spent the first half of my career in Seattle, the latter half in Denver.',
+        beliefs: [
+          {
+            name: "Abortion",
+            value: 3,
+            response: "test"
+          },
+          {
+            name: "Health Care",
+            value: 9,
+            response: "test"
+          },
+          {
+            name: "Gun Control",
+            value: 2,
+            response: "test"
+          },
+          {
+            name: "Freedom of Speech",
+            value: 5,
+            response: "test"
+          },
+          {
+            name: "Immigration",
+            value: 8,
+            response: "test"
+          }
+        ]
       },
-      beliefs: [
-        {
-          name: "Abortion",
-          value: 5,
-          response: "test"
-        },
-        {
-          name: "Health Care",
-          value: 5,
-          response: "test"
-        },
-        {
-          name: "Gun Control",
-          value: 5,
-          response: "test"
-        },
-        {
-          name: "Freedom of Speech",
-          value: 5,
-          response: "test"
-        },
-        {
-          name: "Immigration",
-          value: 5,
-          response: "test"
-        }
-      ],
       roles: [ 'admin' ]
     },
     {
@@ -175,34 +174,34 @@ let _seedUsers = () => {
         location: 'California, USA',
         occupation: 'Special Effects',
         bio: 'Just a regular guy who loves adventure. I have worked on special effects for several high-profile movies including Mission Impossible.',
+        beliefs: [
+          {
+            name: "Abortion",
+            value: 7,
+            response: "test"
+          },
+          {
+            name: "Health Care",
+            value: 7,
+            response: "test"
+          },
+          {
+            name: "Gun Control",
+            value: 3,
+            response: "test"
+          },
+          {
+            name: "Freedom of Speech",
+            value: 6,
+            response: "test"
+          },
+          {
+            name: "Immigration",
+            value: 10,
+            response: "test"
+          }
+        ]
       },
-      beliefs: [
-        {
-          name: "Abortion",
-          value: 5,
-          response: "test"
-        },
-        {
-          name: "Health Care",
-          value: 5,
-          response: "test"
-        },
-        {
-          name: "Gun Control",
-          value: 5,
-          response: "test"
-        },
-        {
-          name: "Freedom of Speech",
-          value: 5,
-          response: "test"
-        },
-        {
-          name: "Immigration",
-          value: 5,
-          response: "test"
-        }
-      ],
       roles: [ 'admin' ],
     }]
   });

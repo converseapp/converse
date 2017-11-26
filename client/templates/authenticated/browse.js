@@ -42,14 +42,31 @@ Template.browse.helpers({
     }
   },
   getBeliefs( beliefs ) {
-    console.log(beliefs);
     if ( beliefs ) {
-      console.log("test");
-      // beliefs.forEach(function(belief) {
-      //   console.log(belief);
-      //   // console.log(belief.value);
-      //   // console.log(belief.response);
-      // });
+      beliefs.forEach(function(belief) {
+        console.log(belief.name);
+        console.log(belief.value);
+        console.log(belief.response);
+      });
     }
+  },
+  getMatches() {    
+    var users = Meteor.users.find( { _id: { $ne: Meteor.userId() } } );
+    var currUser = Meteor.user();
+    var matches = [];
+    users.forEach(function(user) {
+      var currUserBeliefs = currUser.profile.beliefs;
+      var userBeliefs = user.profile.beliefs;
+      var numBeliefs = currUserBeliefs.length;
+      var diffSum = 0;
+      for (var i = 0; i < numBeliefs; i++) {
+        var diff = Math.abs(userBeliefs[i].value - currUserBeliefs[i].value);
+        diffSum += diff;
+      }
+      if (diffSum / numBeliefs > 3) {
+          matches.push(user);        
+      }
+    });
+    return matches;
   }
 });
