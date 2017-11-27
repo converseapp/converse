@@ -13,7 +13,7 @@ let _seedUsers = () => {
         location: 'California, USA',
         occupation: 'Product Manager',
         bio: 'San Jose State graduate currently working as a product manager at Lyft. Born and raised on the East Coast, moved to California for college.',
-        image: 'male1.png',
+        image: 'male3.png',
         beliefs: [
           {
             name: "Abortion",
@@ -54,6 +54,7 @@ let _seedUsers = () => {
         location: 'Illinois, USA',
         occupation: 'Student',
         bio: 'Economics student at the University of Chicago. Raised in a conservative family in Atlanta, Georgia.',
+        image: 'female2.png',
         beliefs: [
           {
             name: "Abortion",
@@ -176,7 +177,6 @@ let _seedUsers = () => {
         age: '42',
         location: 'California, USA',
         occupation: 'Special Effects',
-        image: 'male1.png',
         bio: 'Just a regular guy who loves adventure. I have worked on special effects for several high-profile movies including Mission Impossible.',
         image: 'male2.png',
         beliefs: [
