@@ -41,6 +41,13 @@ Template.browse.helpers({
       return 'no_image_available.png';
     }
   },
+  getReputation ( reputation ) {
+    if ( reputation ) {
+      return `${ reputation } / 10`;
+    } else {
+      return 'N/A';
+    }
+  },
   getMatches() {    
     var users = Meteor.users.find( { _id: { $ne: Meteor.userId() } } );
     var currUser = Meteor.user();
