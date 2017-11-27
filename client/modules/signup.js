@@ -13,29 +13,34 @@ let _handleSignup = () => {
       location: template.find( '[name="location"]' ).value,
       age: template.find( '[name="age"]' ).value,
       occupation: template.find( '[name="occupation"]' ).value,
-      bio: template.find( '[name="bio"]' ).value
-    },
-    beliefs: {
-      belief1: {
-        value: template.find( '[name="belief-1-value"]').value,
-        response: template.find( '[name="belief-1-response"]').value
-      },
-      belief2: {
-        value: template.find( '[name="belief-2-value"]').value,
-        response: template.find( '[name="belief-2-response"]').value
-      },
-      belief3: {
-        value: template.find( '[name="belief-3-value"]').value,
-        response: template.find( '[name="belief-3-response"]').value
-      },
-      belief4: {
-        value: template.find( '[name="belief-4-value"]').value,
-        response: template.find( '[name="belief-4-response"]').value
-      },
-      belief5: {
-        value: template.find( '[name="belief-5-value"]').value,
-        response: template.find( '[name="belief-5-response"]').value
-      }
+      bio: template.find( '[name="bio"]' ).value,
+      beliefs: [
+        {
+          name: "Abortion",
+          value: template.find( '[name="belief-1-value"]').value,
+          response: template.find( '[name="belief-1-response"]').value
+        },
+        {
+          name: "Health Care",
+          value: template.find( '[name="belief-2-value"]').value,
+          response: template.find( '[name="belief-2-response"]').value
+        },
+        {
+          name: "Gun Control",
+          value: template.find( '[name="belief-3-value"]').value,
+          response: template.find( '[name="belief-3-response"]').value
+        },
+        {
+          name: "Freedom of Speech",
+          value: template.find( '[name="belief-4-value"]').value,
+          response: template.find( '[name="belief-4-response"]').value
+        },
+        {
+          name: "Immigration",
+          value: template.find( '[name="belief-5-value"]').value,
+          response: template.find( '[name="belief-5-response"]').value
+        }
+      ]
     }
   };
 
