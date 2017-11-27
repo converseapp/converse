@@ -52,3 +52,7 @@ Template.channel.events({
     handleMessageInsert( event, template );
   }
 });
+
+Template.channel.onRendered( () => {
+  w3_open();
+});
