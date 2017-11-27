@@ -34,6 +34,13 @@ Template.browse.helpers({
       return list;
     }
   },
+  getImage ( image ) {
+    if ( image ) {
+      return image;
+    } else {
+      return 'default.png';
+    }
+  },
   getMatches() {    
     var users = Meteor.users.find( { _id: { $ne: Meteor.userId() } } );
     var currUser = Meteor.user();

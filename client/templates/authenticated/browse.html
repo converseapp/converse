@@ -14,7 +14,7 @@
 
 	  {{#each user in getMatches}}
 	    <div class="{{user.username}} card">
-	      <img class="card-img-top" src="/avatars/{{user.profile.image}}" alt="Card image cap">
+	      <img class="card-img-top" src="/avatars/{{getImage user.profile.image}}" alt="Card image cap">
 	      <div class="card-block">	
 	      	<h4 class="card-header">
 	        	{{fullName user.profile.name}}
