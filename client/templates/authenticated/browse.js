@@ -38,7 +38,7 @@ Template.browse.helpers({
     if ( image ) {
       return image;
     } else {
-      return 'default.png';
+      return 'no_image_available.png';
     }
   },
   getMatches() {    
