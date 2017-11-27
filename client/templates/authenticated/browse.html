@@ -18,9 +18,11 @@
 	      <div class="card-block">	
 	      	<h4 class="card-header">
 	        	{{fullName user.profile.name}}
+	        	<div style="float: right">{{displayInfo user.profile.reputation}} / 10</div>
 	      	</h4>
 	      </div>
 	      <ul class="list-group list-group-flush"> 
+
 	    	<li class="list-group-item">Age: {{displayInfo user.profile.age}}</li>
     		<li class="list-group-item">Location: {{displayInfo user.profile.location}}</li>
     		<li class="list-group-item">Occupation: {{displayInfo user.profile.occupation}}</li>
@@ -28,7 +30,7 @@
   		  </ul>
   		  <div class="card-block">
     		<!--<a href="#" class="card-link">Skip</a>-->
-    		<a href="/messages/@{{user.username}}" class="btn btn-success">Message</a>
+    		<center><a href="/messages/@{{user.username}}" class="btn btn-success" style="width: 100%">Message</a></center>
   		  </div>
 		</div>
 	{{/each}}

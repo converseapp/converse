@@ -40,7 +40,8 @@ let _seedUsers = () => {
             value: 6,
             response: "test"
           }
-        ]
+        ],
+        reputation: "9"
       },
       roles: [ 'admin' ]
      },
@@ -81,7 +82,8 @@ let _seedUsers = () => {
             value: 3,
             response: "test"
           }
-        ]
+        ],
+        reputation: "8.2"
       },
       roles: [ 'admin' ]
     },
@@ -122,7 +124,8 @@ let _seedUsers = () => {
             value: 2,
             response: "test"
           }
-        ]
+        ],
+        reputation: "3.7"
       },
       roles: [ 'admin' ],
       
@@ -164,7 +167,8 @@ let _seedUsers = () => {
             value: 8,
             response: "test"
           }
-        ]
+        ],
+        reputation: "4.9"
       },
       roles: [ 'admin' ]
     },
@@ -205,7 +209,8 @@ let _seedUsers = () => {
             value: 10,
             response: "test"
           }
-        ]
+        ],
+        reputation: "6.1"
       },
       roles: [ 'admin' ],
     },
@@ -246,7 +251,8 @@ let _seedUsers = () => {
             value: 7,
             response: "test"
           }
-        ]
+        ],
+        reputation: "7.3"
       },
       roles: [ 'admin' ]
      },
@@ -287,7 +293,8 @@ let _seedUsers = () => {
             value: 14,
             response: "test"
           }
-        ]
+        ],
+        reputation: "9.2"
       },
       roles: [ 'admin' ]
      },
@@ -328,7 +335,8 @@ let _seedUsers = () => {
             value: 1,
             response: "test"
           }
-        ]
+        ],
+        reputation: "5.6"
       },
       roles: [ 'admin' ]
      },
@@ -369,7 +377,8 @@ let _seedUsers = () => {
             value: 2,
             response: "test"
           }
-        ]
+        ],
+        reputation: "8.5"
       },
       roles: [ 'admin' ]
      },
@@ -410,7 +419,8 @@ let _seedUsers = () => {
             value: 7,
             response: "test"
           }
-        ]
+        ],
+        reputation: "9.4"
       },
       roles: [ 'admin' ]
      }]
