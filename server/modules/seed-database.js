@@ -95,7 +95,7 @@ let _seedUsers = () => {
         location: 'New York, USA',
         occupation: 'Construction Worker and Student',
         bio: 'Construction worker in New York City. I also take online courses at a local community college.',
-        image: 'male1.png',
+        image: 'male5.png',
         beliefs: [
           {
             name: "Abortion",
@@ -208,7 +208,212 @@ let _seedUsers = () => {
         ]
       },
       roles: [ 'admin' ],
-    }]
+    },
+    {
+      username: 'allstar',
+      email: 'james@admin.com',
+      password: 'password',
+      profile: {
+        name: { first: 'James', last: 'Harper' },
+        age: '29',
+        location: 'Florida, USA',
+        occupation: 'Personal Fitness Coach',
+        bio: 'Personal fitness coach with over 8 years of experience helping athletes reach their fitness goals. In college, I did a minor in political science.',
+        image: 'male4.png',
+        beliefs: [
+          {
+            name: "Abortion",
+            value: 12,
+            response: "test"
+          },
+          {
+            name: "Health Care",
+            value: 14,
+            response: "test"
+          },
+          {
+            name: "Gun Control",
+            value: 15,
+            response: "test"
+          },
+          {
+            name: "Freedom of Speech",
+            value: 4,
+            response: "test"
+          },
+          {
+            name: "Immigration",
+            value: 7,
+            response: "test"
+          }
+        ]
+      },
+      roles: [ 'admin' ]
+     },
+     {
+      username: 'iraqvet',
+      email: 'susan@admin.com',
+      password: 'password',
+      profile: {
+        name: { first: 'Susan', last: 'Lee' },
+        age: '45',
+        location: 'Texas, USA',
+        occupation: 'Veteran',
+        bio: 'I served overseas in Iraq for five years. I come from a military family, and one of our core values is serving our country.',
+        image: 'female3.png',
+        beliefs: [
+          {
+            name: "Abortion",
+            value: 5,
+            response: "test"
+          },
+          {
+            name: "Health Care",
+            value: 1,
+            response: "test"
+          },
+          {
+            name: "Gun Control",
+            value: 14,
+            response: "test"
+          },
+          {
+            name: "Freedom of Speech",
+            value: 14,
+            response: "test"
+          },
+          {
+            name: "Immigration",
+            value: 14,
+            response: "test"
+          }
+        ]
+      },
+      roles: [ 'admin' ]
+     },
+     {
+      username: 'amazingchef',
+      email: 'rahul@admin.com',
+      password: 'password',
+      profile: {
+        name: { first: 'Rahul', last: 'Sharma' },
+        age: '55',
+        location: 'Washington, USA',
+        occupation: 'Restaurant Owner',
+        bio: 'Immigrated from India over 20 years ago. I own one of the most successful and famous Indian restaurants in Seattle.',
+        image: 'male1.png',
+        beliefs: [
+          {
+            name: "Abortion",
+            value: 3,
+            response: "test"
+          },
+          {
+            name: "Health Care",
+            value: 2,
+            response: "test"
+          },
+          {
+            name: "Gun Control",
+            value: 10,
+            response: "test"
+          },
+          {
+            name: "Freedom of Speech",
+            value: 12,
+            response: "test"
+          },
+          {
+            name: "Immigration",
+            value: 1,
+            response: "test"
+          }
+        ]
+      },
+      roles: [ 'admin' ]
+     },
+     {
+      username: 'pro-programmer',
+      email: 'jasmine@admin.com',
+      password: 'password',
+      profile: {
+        name: { first: 'Jasmine', last: 'Duncan' },
+        age: '37',
+        location: 'South Carolina, USA',
+        occupation: 'Software Engineer',
+        bio: 'Work as a software engineer at a start-up in Charleston. Graduate of Clemson University. Go Tigers!',
+        image: 'female4.png',
+        beliefs: [
+          {
+            name: "Abortion",
+            value: 1,
+            response: "test"
+          },
+          {
+            name: "Health Care",
+            value: 13,
+            response: "test"
+          },
+          {
+            name: "Gun Control",
+            value: 2,
+            response: "test"
+          },
+          {
+            name: "Freedom of Speech",
+            value: 3,
+            response: "test"
+          },
+          {
+            name: "Immigration",
+            value: 2,
+            response: "test"
+          }
+        ]
+      },
+      roles: [ 'admin' ]
+     },
+     {
+      username: 'doc',
+      email: 'roxanne@admin.com',
+      password: 'password',
+      profile: {
+        name: { first: 'Roxanne', last: 'Warner' },
+        age: '60',
+        location: 'Nebraska, USA',
+        occupation: 'Surgeon',
+        bio: 'I have over 30 years of experience working as a surgeon in Omaha. I did not pay much attention to politics when I was younger, but as I near retirement, I find myself following the news a lot more.',
+        image: 'female5.png',
+        beliefs: [
+          {
+            name: "Abortion",
+            value: 15,
+            response: "test"
+          },
+          {
+            name: "Health Care",
+            value: 13,
+            response: "test"
+          },
+          {
+            name: "Gun Control",
+            value: 4,
+            response: "test"
+          },
+          {
+            name: "Freedom of Speech",
+            value: 6,
+            response: "test"
+          },
+          {
+            name: "Immigration",
+            value: 7,
+            response: "test"
+          }
+        ]
+      },
+      roles: [ 'admin' ]
+     }]
   });
 };
 
